@@ -63,10 +63,6 @@ const loadSearchResults = (searchText) => {
       return;
     }
   });
-  // Page is updated every minute
-  setInterval(() => {
-    loadSearchResults(searchText);
-  }, 60000);
 }; // loadSearchResults()
 
 const handleCityNotFound = () => {
