@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Franklin Gothic Medium', sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+p {
+  font-size: 1.5vh;
+}
+
+#errorMessage {
+  margin-top: 20px;
+  font-size: 2vh;
+  color: pink;
+  display: none;
+}
+
+#wind,
+#humidity,
+#feelsLike {
+  font-size: 3.5vh;
+}
+
+#time {
+  font-size: 2vh;
+}
+
+#weatherContainer {
+  width: 80%;
+  height: 90%;
+  max-width: 1200px;
+  max-height:1200px;
+  background: linear-gradient(140deg, #8360c3, #2ebf91);
+  color: white;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  padding: 80px 70px;
+  text-align: center;
+}
+
+#searchForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchText {
+  width: 30%;
+  font-size: 2vh;
+  border: 0;
+  outline: 0;
+  color: darkgrey;
+  border-radius: 4vh;
+  padding: 1vh 2vw;
+  margin-right: 20px;
+}
+
+#searchText::placeholder{
+  font-size: 1.2vh;
+}
+
+#searchButton {
+  border: 0;
+  outline: 0;
+  background: white;
+  border-radius: 50%;
+  height: 4.5vh;
+  width: 3.5vw;
+  cursor: pointer;
+}
+
+#searchButton img {
+  height: 2.5vh;
+  width: 2vw;
+}
+
+#weatherIcon {
+  width: 30%;
+  height: 30%;
+  margin-top: 20px;
+}
+
+#now {
+  font-size: 2.2vh;
+}
+
+#resultContainer {
+  display: none;
+}
+
+#resultContainer h1 {
+  font-size: 8vh;
+  font-weight: 500;
+}
+
+#feelsText{
+  font-size: 1vh;
+  font-weight: 500;
+}
+
+#resultContainer h2 {
+  font-size: 4vh;
+  font-weight: 300;
+}
+
+#detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 5px;
+}
+
+.column img {
+  width: 25%;
+  margin-right: 10px;
+}
+
+#todayContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4px;
+}
+
+#todayContainer div {
+  background-color: #8ca0ff;
+}
+
+#today {
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todayMin,
+#todayMax{
+  font-size: 1.8vh;
+  text-align: center;
+}
+
+#forecastButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2vh;
+  background-color: skyblue;
+  border: none;
+  width: 15vw;
+  height: 4.5vh;
+  cursor: pointer;
+}
+
+#forecastButton:hover {
+  background-color: burlywood;
+}
+
+#forecastContainer {
+  display: none;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.day img {
+  max-width: 100%;
+  height: auto;
+}
+
+.date {
+  font-size: 2vh;
+}
+
+.dailyDetails {
+  font-size: 1.5vh;
+  text-align: left;
+}
+
+#backButtonContainer {
+  display: none;
+}
+
+#backButton {
+  font-size: 2.5vh;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#backButton:hover {
+  color: purple;
+}

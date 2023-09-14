@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="#"><!-- no favicon error -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Search</title>
+  <script src="js/axios.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="weatherContainer">
+    <form id="searchForm">
+      <input type="text" id="searchText" placeholder="Enter a city, country code (eg. London, UK)">
+      <button id="searchButton"><img src="images/search.png" alt="Search button"></button>
+    </form>
+    <div id="errorMessage"></div>
+    <div id="resultContainer">
+      <img id="weatherIcon" src="images/rain.png">
+      <p id="now"></p>
+      <h1 id="temperature"></h1>
+      <h2 id="city"></h2>
+      <div id="detailsContainer">
+
+        <div class="column">
+          <div>
+            <p id="feelsLike"></p>
+            <p>Feels Like</p>
+          </div>
+        </div> 
+
+       <div class="column">
+        <img src="images/humidity.png" alt="humidity">
+        <div>
+          <p id="humidity"></p>
+          <p>Humidity</p>
+        </div>
+       </div> 
+
+       <div class="column">
+        <img src="images/wind.png" alt="wind">
+        <div>
+          <p id="wind"></p>
+          <p>Wind speed</p>
+        </div>
+       </div>
+
+       <div class="column">
+        <img src="images/clock.png" alt="clock">
+        <div>
+          <p id="time"></p>
+          <p>Local time</p>
+        </div>
+       </div>
+
+       <div class="column">
+        <div id="todayContainer">
+          <div id="today">Today</div>
+          <div id="todayMin"></div>
+          <div id="todayMax"></div>
+        </div>
+       </div>
+
+       <div class="column">
+        <div id="forecastButton">
+          <div>10 day Forecast</div> 
+        </div>
+       </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div id="forecastContainer"></div>
+      <div id="backButtonContainer"><button id="backButton">Back to current weather details</button></div>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
