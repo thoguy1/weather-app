@@ -82,9 +82,9 @@ p {
 }
 
 #weatherIcon {
-  width: 30%;
-  height: 30%;
-  margin-top: 20px;
+  width: 20%;
+  height: 20%;
+  margin-top: 1rem;
 }
 
 #now {
