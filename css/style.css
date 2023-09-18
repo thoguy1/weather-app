@@ -31,16 +31,16 @@ p {
 
 #weatherContainer {
   width: 80%;
-  height: 90%;
+  height: 80%;
   max-width: 1200px;
   max-height:1200px;
   background: linear-gradient(140deg, #8360c3, #2ebf91);
   color: white;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 40px;
-  padding: 80px 70px;
+  padding: 20px 0;
   text-align: center;
 }
 
