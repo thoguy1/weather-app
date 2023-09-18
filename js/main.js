@@ -193,7 +193,7 @@ const displayForecast = (data, city) => {
   
   forecastContainer.style.display = 'grid';
   forecastContainer.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr';
-  forecastContainer.style.gridGap = '20px';
+  forecastContainer.style.gridGap = '30px';
   forecastContainer.style.padding = '30px 100px';
 
   backButtonContainer.style.display = 'block';
